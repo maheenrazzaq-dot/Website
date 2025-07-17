@@ -1,0 +1,149 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box
+}
+body{
+  font-family:Arial,sans-serif;
+  background:#f5f5f5;
+  color:#333
+}
+.home{
+  background-image: url(images/remote.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* Mobile Responsive */
+ @media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+ }  
+
+.header{
+  background:#004080;
+  color:white;
+  padding:1rem 0
+}
+.navbar{
+  display:flex;
+  gap:15px
+}
+.navbar a{
+  color:white;
+  text-decoration:none
+}
+.hero{
+  padding:16em 3rem;
+  text-align:center
+}
+.btn{
+  background:#004080;
+  color:white;
+  padding:0.7rem 1.5rem;
+  border:none;
+  text-decoration:none;
+  border-radius:5px;
+  display:inline-block;
+  margin-top:1rem
+}
+.content{
+  padding:2rem 0;
+  /* color: #f5f5f5; */
+}
+.line{
+  padding:2rem 0;
+  color: #f5f5f5;
+}
+.remote{
+  color: #f5f5f5;
+  background-color: rgb(3, 64, 107);
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+form{
+  display:flex;
+  flex-direction:column;
+  gap:1rem
+}
+form input,form textarea{
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:4px;
+  color: #333;
+}
+form .btn{
+  max-width:150px
+}
+#scrollTopBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#004080;
+  color:#fff;
+  border:none;
+  padding:10px 15px;
+  border-radius:50%;
+  display:none;
+  cursor:pointer;
+  font-size:18px}
+.benefits{
+  list-style:none;
+  padding-left:0;
+  margin-top:1rem
+}
+.benefits li{
+  margin-bottom:0.5rem
+}
+.about{
+  background-image: url(images/about.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Responsive */
+@media(max-width:768px){
+  .navbar{
+    flex-direction:column;
+    align-items:center
+  }
+  .container{
+    padding:10px
+  }
+}
